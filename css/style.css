@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto.woff") format("woff"),
+    url("../fonts/roboto.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/robotobold.woff") format("woff"),
+    url("../fonts/robotobold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/robotomedium.woff") format("woff"),
+    url("../fonts/robotomedium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+body
+{
+    width: 1440px;
+    margin: 0 auto;
+}
+.container
+{
+    /*width: 1160px;*/
+    padding: 0 140px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header
+{
+    background: #eeeeee;
+}
+.header-top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo
+{
+    font-size: 0;
+    width: 160px;
+    height: 70px;
+    background: url(../img/nerds-logo.png) no-repeat;
+}
+.navigation-list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation-item,
+.cart
+{
+    text-decoration: none;
+    color: #000;
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.cart
+{
+    position: relative;
+    padding-left: 25px;
+}
+.cart::before
+{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/cart-icon.png") no-repeat;
+    top: 0;
+    left: 0;
+}
+.slider-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider-title
+{
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    width: 35%;
+}
+.slider-text
+{
+    font-family: "RobotoBold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    width: 35%;
+}
+.btn
+{
+    text-align: center;
+    padding: 10px;
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.btn-header
+{
+    margin-top: 20px;
+    background: #fb565a;
+    width: 240px;
+}
+.slider-1
+{
+    width: 100%;
+    background: url("../img/slide1.png") no-repeat right;
+}
+.slider-2,
+.slider-3
+{
+    display: none;
+}
+.slider
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:  80px;
+}
+
+.block-order
+{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid #eeeeee;
+}
+.order-item
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.title-order
+{
+    font-family: "RobotoBold", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.description-order
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    width: 90%;
+    margin-bottom: 35px;
+}
+.btn-red
+{
+
+    background-color: #fb565a;
+    width: 160px;
+    padding: 10px 30px;
+}
+.btn-green
+{
+    background-color: #00ca74;
+    width: 160px;
+    padding: 10px 30px;
+}
+.btn-yellow
+{
+    background-color: #efc84a;
+    width: 160px;
+    padding: 10px 30px;
+}
+
+.about-us-block
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+.about-us
+{
+    width: 59%;
+}
+.title
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    line-height: 45px;
+}
+.about-us-description
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-us-title
+{
+    font-family: "RobotoBold", sans-serif;
+    font-size: 16px;
+}
+.develops-list
+{
+    margin: 0;
+    padding: 0;
+}
+.develops-item
+{
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.develops-item::before
+{
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background-color: red;
+}
+.parametres
+{
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+}
+.parametres-item
+{
+
+    list-style: none;
+    width: 110px;
+    margin-right: 20px;
+}
+.parametres-top
+{
+    font-family: "RobotoBold" sans-serif;
+    font-size: 45px;
+}
+.parametres-bottom
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.features-block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+}
+.features-block img
+{
+    align-items: center;
+}
+sup
+{
+     top: -0.3em;
+}
+
+.block-client
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #eeeeee;
+    border-top: 2px solid #eeeeee;
+    height: 180px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.client-list
+{
+    font-size: 0;
+    width: 280px;
+    opacity: .2;
+}
+.html
+{
+    background: url(../img/logo-1.png) no-repeat center;
+    height: 100%;
+    filter: grayscale(100%);
+}
+.bd
+{
+    background: url(../img/logo-2.png) no-repeat center;
+    height: 100%;
+    filter: grayscale(100%);
+}
+.pink
+{
+    background: url(../img/logo-3.png) no-repeat center;
+    height: 100%;
+    filter: grayscale(100%);
+}
+.mishka
+{
+    background: url(../img/logo-4.png) no-repeat center;
+    height: 100%;
+}
+.block-client a:hover
+{
+    opacity: 1;
+}
+.maps
+{
+    background: url("../img/maps.png");
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+}
+.maps-form
+{
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background: #fff;
+    text-align: center;
+    padding: 50px;
+}
+.maps-form .title
+{
+    font-family: "RobotoBold", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
