@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,54 +10,52 @@
 </head>
 
 <body>
-    <header class="header container">
-        <div class="header-top">
-            <div class="logo">
-                <a href="#">Nerds</a>
-            </div>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li><a href="" class="navigation-item">студия</a></li>
-                    <li><a href="" class="navigation-item">клиенты</a></li>
-                    <li><a href="" class="navigation-item">магазин</a></li>
-                    <li><a href="" class="navigation-item">контакты</a></li>
-                </ul>
-            </nav>
-            <div class="block_cart">
-                <a href="#" class="cart">корзина</a>
-            </div>
-        </div>
-        <input type="radio" class="slider-toogle" name="slider-header" id="slider-1" checked>
-        <input type="radio" class="slider-toogle" name="slider-header" id="slider-2">
-        <input type="radio" class="slider-toogle" name="slider-header" id="slider-3">
-        <div class="slider-header">
-            <div class="slider-1">
-                <div class="slider">
-                    <h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
-                    <p class="slider-text">Математически выверный дизайн<br> для вашего сайта или мобильного приложения</p>
-                    <a href="#" class="btn btn-header">узнать больше</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#">Nerds</a>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation-list">
+                        <li><a href="" class="navigation-item">студия</a></li>
+                        <li><a href="" class="navigation-item">клиенты</a></li>
+                        <li><a href="" class="navigation-item">магазин</a></li>
+                        <li><a href="" class="navigation-item">контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="block_cart">
+                    <a href="#" class="cart">корзина</a>
                 </div>
             </div>
-            <div class="slider-2">
-                <div class="slider">
-                    <h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
-                    <p class="slider-text">Математически выверный дизайн<br> для вашего сайта или мобильного приложения</p>
-                    <a href="#" class="btn btn-header">узнать больше</a>
+            <div class="slider">
+                <input type="radio" class="slider-toogle" name="slider-header" id="slider-1" checked>
+                <input type="radio" class="slider-toogle" name="slider-header" id="slider-2">
+                <input type="radio" class="slider-toogle" name="slider-header" id="slider-3">
+                <div class="slider-control">
+                    <label for="slider-1"></label>
+                    <label for="slider-2"></label>
+                    <label for="slider-3"></label>
+                </div>
+                <div class="slides">
+                    <div class="slider-1" id="slide1">
+                            <h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
+                            <p class="slider-text">Математически выверный дизайн<br> для вашего сайта или мобильного приложения</p>
+                            <a href="#" class="btn btn-header">узнать больше</a>
+                    </div>
+                    <div class="slider-2" id="slide2">
+                            <h2 class="slider-title">Любим математику как никто другой</h2>
+                            <p class="slider-text">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+                            <a href="#" class="btn btn-header">узнать больше</a>
+                    </div>
+                    <div class="slider-3" id="slide3">
+
+                            <h2 class="slider-title">Только ночь, Только хардкор.</h2>
+                            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+                            <a href="#" class="btn btn-header">узнать больше</a>
+                    </div>
                 </div>
             </div>
-            <div class="slider-3">
-                <div class="slider">
-                    <h2 class="slider-title">Долго, дорого, скурпулезно.</h2>
-                    <p class="slider-text">Математически выверный дизайн<br> для вашего сайта или мобильного приложения</p>
-                    <a href="#" class="btn btn-header">узнать больше</a>
-                </div>
-            </div>
-        </div>
-        <div class="slider-control">
-            <label for="slider-1"></label>
-            <label for="slider-2"></label>
-            <label for="slider-3"></label>
-        </div>
     </header>
     <div class="block-order container">
         <div class="order-item">
@@ -119,22 +116,31 @@
         <a href="#" class="client-list mishka">mishka</a>
     </div>
     <div class="maps">
-        <div class="maps-form">
+        <div class="container">
+            <div class="maps-form">
             <h2 class="title">nёrds design studio</h2>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
-            <span>тел. +7(812)275-75-75</span>
+            <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д 19/8</p>
+            <span class="phone">тел. +7(812)275-75-75</span>
             <a href="#" class="btn btn-red">напишите нам</a>
         </div>
+        <div class="checkpoint">
+            <a href="#" class="point"></a>
+        </div>
     </div>
-    <footer class="footer">
+
+    </div>
+    <footer class="footer container">
         <div class="social-block">
             <ul class="social-list">
-                <li><a href="" class="social-item">vk</a></li>
-                <li><a href="" class="social-item">fb</a></li>
-                <li><a href="" class="social-item">inst</a></li>
+                <li><a href="" class="social-item vk">vk</a></li>
+                <li><a href="" class="social-item fb">fb</a></li>
+                <li><a href="" class="social-item inst">inst</a></li>
             </ul>
-            <span class="promo">давайте дружить, это выгодно!</span>
-            <p class="promo-description">скидка 10% для друзей из социальных сетей.</p>
+            <div class="promo-block">
+                <span class="promo">Давайте дружить, это выгодно!</span>
+                <p class="promo-description">Cкидка 10% для друзей из социальных сетей.</p>
+            </div>
+
         </div>
     </footer>
 </body>
